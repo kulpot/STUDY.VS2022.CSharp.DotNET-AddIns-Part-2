@@ -19,8 +19,8 @@ class MainClass
             .Equals(typeof(IChessGame))));
         IChessGame player1Impl = Activator.CreateInstance(playerAlgorithmType);
         */
-        IChessGame player1 = CreatePlayerAlgorithmInstance(player1);
-        IChessGame player2 = CreatePlayerAlgorithmInstance(player2);
+        IChessGame player1 = CreatePlayerAlgorithmInstance(player1Assembly);
+        IChessGame player2 = CreatePlayerAlgorithmInstance(player2Assembly);
     }
 
     private static IChessGame CreatePlayerAlgorithmInstance(Assembly player1)
